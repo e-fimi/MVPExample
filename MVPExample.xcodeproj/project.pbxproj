@@ -16,6 +16,9 @@
 		041134B6271CB53000A1880F /* MVPExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041134B5271CB53000A1880F /* MVPExampleTests.swift */; };
 		041134C0271CB53000A1880F /* MVPExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041134BF271CB53000A1880F /* MVPExampleUITests.swift */; };
 		041134C2271CB53000A1880F /* MVPExampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041134C1271CB53000A1880F /* MVPExampleUITestsLaunchTests.swift */; };
+		041134D3271CB60000A1880F /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041134D2271CB60000A1880F /* Crypto.swift */; };
+		041134D5271CB7B500A1880F /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041134D4271CB7B500A1880F /* Presenter.swift */; };
+		041134D7271CB83200A1880F /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041134D6271CB83200A1880F /* Protocols.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		041134BB271CB53000A1880F /* MVPExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MVPExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		041134BF271CB53000A1880F /* MVPExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPExampleUITests.swift; sourceTree = "<group>"; };
 		041134C1271CB53000A1880F /* MVPExampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPExampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		041134D2271CB60000A1880F /* Crypto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crypto.swift; sourceTree = "<group>"; };
+		041134D4271CB7B500A1880F /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
+		041134D6271CB83200A1880F /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +105,10 @@
 		0411349D271CB52700A1880F /* MVPExample */ = {
 			isa = PBXGroup;
 			children = (
-				0411349E271CB52700A1880F /* AppDelegate.swift */,
-				041134A0271CB52700A1880F /* SceneDelegate.swift */,
-				041134A2271CB52700A1880F /* ViewController.swift */,
+				041134D1271CB5C300A1880F /* Presenters */,
+				041134D0271CB5BA00A1880F /* Views */,
+				041134CF271CB5B100A1880F /* Models */,
+				041134CE271CB58800A1880F /* App */,
 				041134A4271CB52700A1880F /* Main.storyboard */,
 				041134A7271CB52F00A1880F /* Assets.xcassets */,
 				041134A9271CB52F00A1880F /* LaunchScreen.storyboard */,
@@ -125,6 +132,40 @@
 				041134C1271CB53000A1880F /* MVPExampleUITestsLaunchTests.swift */,
 			);
 			path = MVPExampleUITests;
+			sourceTree = "<group>";
+		};
+		041134CE271CB58800A1880F /* App */ = {
+			isa = PBXGroup;
+			children = (
+				0411349E271CB52700A1880F /* AppDelegate.swift */,
+				041134A0271CB52700A1880F /* SceneDelegate.swift */,
+				041134D6271CB83200A1880F /* Protocols.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		041134CF271CB5B100A1880F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				041134D2271CB60000A1880F /* Crypto.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		041134D0271CB5BA00A1880F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				041134A2271CB52700A1880F /* ViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		041134D1271CB5C300A1880F /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				041134D4271CB7B500A1880F /* Presenter.swift */,
+			);
+			path = Presenters;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,9 +299,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				041134D3271CB60000A1880F /* Crypto.swift in Sources */,
 				041134A3271CB52700A1880F /* ViewController.swift in Sources */,
 				0411349F271CB52700A1880F /* AppDelegate.swift in Sources */,
+				041134D7271CB83200A1880F /* Protocols.swift in Sources */,
 				041134A1271CB52700A1880F /* SceneDelegate.swift in Sources */,
+				041134D5271CB7B500A1880F /* Presenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
